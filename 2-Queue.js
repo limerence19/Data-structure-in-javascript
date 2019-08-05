@@ -1,4 +1,4 @@
-class Queue {
+export default class Queue {
     constructor() {
         this.dataStore = [];
     }
@@ -22,9 +22,5 @@ class Queue {
     isEmpty() {
         return this.dataStore.length === 0;
     }
-}
-
-module.exports = {
-    Queue
 }
 

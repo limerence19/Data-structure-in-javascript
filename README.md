@@ -1,1 +1,1 @@
-# Data-structure-in-javascript
+# DS in Javascript

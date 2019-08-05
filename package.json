@@ -1,0 +1,26 @@
+{
+  "name": "Data-structure-in-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-Stack.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limerence19/Data-structure-in-javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/limerence19/Data-structure-in-javascript/issues"
+  },
+  "homepage": "https://github.com/limerence19/Data-structure-in-javascript#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-preset-env": "^1.7.0"
+  }
+}
