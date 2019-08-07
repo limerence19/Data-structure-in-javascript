@@ -8,9 +8,18 @@ class Node {
     }
 }
 
-class BST {
+export default class BST {
     constructor() {
         this.rootNode = null;
+        this.size = 0;
+    }
+
+    size() {
+        return this.size;
+    }
+
+    isEmpty() {
+        return this.size === 0;
     }
 
     insert(key) {
@@ -20,6 +29,8 @@ class BST {
         } else {
             this.insertNode(this.rootNode, newNode);
         }
+
+        this.size++;
     }
 
     insertNode(node, newNode) {
@@ -149,6 +160,7 @@ class BST {
 
     remove(key) {
         this.rootNode = this.removeNode(this.rootNode, key);
+        this.size--;
     }
 
     removeNode(node, key) {
@@ -191,9 +203,6 @@ class BST {
     }
 }
 
-
-
-
 // Test
 const nodes = [8, 3, 10, 1, 6, 14, 4, 7, 13];
 const bst = new BST();
@@ -228,6 +237,6 @@ nodes.forEach((key) => {
 //     console.log(key);
 // })
 
-bst.levelOrder((key) => {
-    console.log(key);
-})
+// bst.levelOrder((key) => {
+//     console.log(key);
+// })
