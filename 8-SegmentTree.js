@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-<script>
-    class SegmentTree {
+class SegmentTree {
     constructor(arr) {
         this.data = new Array(arr.length);
         for (let i = 0; i < arr.length; i++) {
@@ -129,6 +119,3 @@ let segment = new SegmentTree(nums);
 console.log(segment.query(1,3));
 segment.update(2, 11);
 console.log(segment.query(1,3));
-</script>
-</body>
-</html>
