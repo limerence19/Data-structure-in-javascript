@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-<script>
 class TrieNode {
     constructor(char, isWord=false) {
         this.char = char;
@@ -62,13 +52,10 @@ class Trie {
     }
 }
 
-    // Test
-    let trie = new Trie();
-    trie.add('allen');
-    trie.add('bob');
-    trie.add('cindy');
-    trie.add('david');
-    console.log(trie.contains('bob'));
-</script>
-</body>
-</html>
+// Test
+let trie = new Trie();
+trie.add('what');
+trie.add('why');
+trie.add('where');
+trie.add('when');
+console.log(trie.contains('why'));
